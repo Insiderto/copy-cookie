@@ -36,6 +36,5 @@ jobs:
         run: echo "RELEASE_TAG=$(date +'%Y%m%d%H%M%S')" >> $GITHUB_ENV
 
       - name: Create Archive from dist
-        run: | ls
-
-
+        run: |
+          ls
