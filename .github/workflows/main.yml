@@ -35,6 +35,9 @@ jobs:
         id: generate_tag
         run: echo "RELEASE_TAG=$(date +'%Y%m%d%H%M%S')" >> $GITHUB_ENV
 
+      - name: Create Archive from dist
+        run: zip -r dist.zip dist
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -52,6 +55,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./dist
+          asset_path: ./dist.zip
           asset_name: dist.zip
           asset_content_type: application/zip
