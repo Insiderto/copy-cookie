@@ -1,0 +1,22 @@
+Privacy Policy for CookieCopy
+Effective Date: March 13, 2024
+
+Introduction
+CookieCopy ("we", "us", "our") respects your privacy and is committed to protecting your personal data. Our extension is designed as a developer tool for quick cookie management, operating entirely on the user side without collecting, using, transmitting, or storing any user data.
+
+This Privacy Policy aims to inform you about our approach to any personal data that we might collect if we did—emphasizing that our extension is developed in such a way that data collection does not take place.
+
+Data Collection and Use
+CookieCopy does not collect or store any information about you. This means we do not require registration and do not collect personal data such as names, email addresses, or other information that could be used to identify you.
+
+User-Side Information
+All data processed by CookieCopy is handled and stored exclusively on your device. We do not have access to this information and cannot collect or use it.
+
+Security
+We take reasonable precautions to protect the information processed by our extension. However, since we do not collect or store your data, the risk to your personal data is minimal.
+
+Changes to Our Privacy Policy
+We may update our Privacy Policy from time to time. We encourage you to review this page periodically for any changes.
+
+Contact Information
+If you have any questions or suggestions regarding our Privacy Policy, please contact us at alonixg47@gmail.com.
