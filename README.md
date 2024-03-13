@@ -13,9 +13,6 @@ Cookie Copier is a Chrome extension that allows you to search for cookies in the
 
 This tool is useful for developers who need to work with cookies and want a quick and easy way to copy them from the browser.
 
-
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
-
 ## Available Scripts
 
 In the project directory, you can run:
