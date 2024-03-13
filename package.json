@@ -1,7 +1,7 @@
 {
-  "name": "vite-template-solid",
-  "version": "0.0.0",
-  "description": "",
+  "name": "cookie-copy-extension",
+  "version": "0.1.0",
+  "description": "A cookie copy extension for Chrome",
   "scripts": {
     "start": "vite",
     "dev": "vite",
