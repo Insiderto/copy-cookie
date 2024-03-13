@@ -1,12 +1,18 @@
-## Usage
+## Cookie Copier
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+Cookie Copier is a Chrome extension that allows you to search for cookies in the current tab, select the ones you need, and copy them in JSON format.
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+### Usage
 
-```bash
-$ npm install # or pnpm install or yarn install
-```
+1. Install the extension in your Chrome browser.
+2. Click on the extension icon to open the popup.
+3. In the popup, you will see a list of all cookies in the current tab.
+4. Use the search bar to find specific cookies.
+5. Select the cookies you want to copy by checking the box next to each cookie.
+6. Click the "Copy" button to copy the selected cookies. The cookies will be copied to your clipboard in JSON format.
+
+This tool is useful for developers who need to work with cookies and want a quick and easy way to copy them from the browser.
+
 
 ### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
 
@@ -23,12 +29,14 @@ The page will reload if you make edits.<br>
 
 ### `npm run build`
 
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
+Builds the extension for production to the `dist` folder.<br>
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+To load the extension in Chrome or Edge:
 
-## Deployment
+1. Open the Extensions page (chrome://extensions in Chrome, edge://extensions in Edge).
+2. Enable Developer mode.
+3. Click "Load unpacked".
+4. Navigate to the `dist` folder and click "Select".
 
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+Your extension should now be loaded and ready to use!
+

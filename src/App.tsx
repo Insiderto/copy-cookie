@@ -4,7 +4,9 @@ import { getCookieFromCurrentTab } from './extensionApi';
 
 
 const debugCookies: Record<string, string> = {
-
+  'cookie1': 'value1',
+  'debugCookie': 'debugValue',
+  'testdata': 'testvalue',
 };
 
 const getCookies = async () => {
