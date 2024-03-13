@@ -21,6 +21,10 @@ jobs:
       - name: Create zip archive from dist
         run: zip -r dist.zip dist
 
+      - name: Generate release tag
+        id: generate_tag
+        run: echo "RELEASE_TAG=$(date +'%Y%m%d%H%M%S')" >> $GITHUB_ENV
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -41,4 +45,3 @@ jobs:
           asset_path: ./dist.zip
           asset_name: dist.zip
           asset_content_type: application/zip
-#trigger
