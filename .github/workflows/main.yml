@@ -12,8 +12,12 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v2
+      - name: put dist zip to release
+        uses: actions/upload-release-asset@v1
         with:
-          name: dist
-          path: dist
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./dist.zip
+          asset_name: dist.zip
+          asset_content_type: application/zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
