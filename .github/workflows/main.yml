@@ -36,7 +36,13 @@ jobs:
         run: echo "RELEASE_TAG=$(date +'%Y%m%d%H%M%S')" >> $GITHUB_ENV
 
       - name: Create Archive from dist
-        run: zip -r dist.zip dist
+        run: |
+          if [ -d dist ]; then
+            zip -r dist.zip dist
+          else
+            echo "Directory 'dist' does not exist."
+            exit 1
+          fi
 
       - name: Create Release
         id: create_release
