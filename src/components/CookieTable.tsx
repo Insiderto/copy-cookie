@@ -30,10 +30,7 @@ const CookieTable: Component<CookieTableProps> = (props) => {
     }
     const isSomeSelected = () => Object.keys(selected()).length > 0;
 
-
     const onCopy = () => {
-
-
         const text = JSON.stringify(Object.fromEntries(Object.entries(selected())));
         navigator.clipboard.writeText(text);
         setCopyStatus(`${Object.keys(selected()).length} cookies copied`);
