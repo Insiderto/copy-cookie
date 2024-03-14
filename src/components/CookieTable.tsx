@@ -4,13 +4,16 @@ type CookieTableProps = {
     cookies: Record<string, string>
 }
 
-const filterCookies = (cookies: Record<string, string>, filter: string) => {
+const filterCookies = (cookies: Record<string, string>, filter: string): Record<string, string> => {
+    const lowerCaseFilter = filter.toLowerCase();
+
     return Object.fromEntries(
         Object.entries(cookies).filter(([name, value]) => {
-            return name.includes(filter) || value.includes(filter);
+            return name.toLowerCase().includes(lowerCaseFilter) || value.toLowerCase().includes(lowerCaseFilter);
         })
     );
 }
+
 const CookieTable: Component<CookieTableProps> = (props) => {
     const [selected, setSelected] = createSignal<Record<string, string>>({});
     const [search, setSearch] = createSignal('');
